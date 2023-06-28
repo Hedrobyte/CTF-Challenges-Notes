@@ -1,0 +1,6 @@
+# [Hack the Box](https://www.hackthebox.com/) 
+This folder contains my notes and resolutions for the Hack The Box challenges. It includes a compilation of the challenges I have solved, along with relevant notes and scripts created during the resolution process.
+
+* Access [My Hack The Box Profile](https://app.hackthebox.com/profile/1318646) to view my progress and achievements.
+
+
