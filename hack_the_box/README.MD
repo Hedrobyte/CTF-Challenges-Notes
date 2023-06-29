@@ -5,6 +5,7 @@ This folder contains my notes and resolutions for the Hack The Box challenges. I
 
 
 ## Starting Point
-| Machine                                  | Tier |
-|------------------------------------------|------|  
-| [Meow](./starting_point/meow/)           | 0    |
+| Machine                                  |  OS   | Difficulty |
+|------------------------------------------|-------|------------|
+| [Meow](./starting_point/meow/)           | Linux | Very easy  | 
+| [Fawn](./starting_point/fawn/)           | Linux | Very easy  | 

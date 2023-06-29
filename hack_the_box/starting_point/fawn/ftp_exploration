@@ -1,0 +1,32 @@
+──(kali㉿kali)-[~/…/hack_the_box/starting_point/tier0/Fawn]
+└─$ ftp 10.129.171.212
+Connected to 10.129.171.212.
+220 (vsFTPd 3.0.3)
+Name (10.129.171.212:kali): anonymous
+331 Please specify the password.
+Password: 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+229 Entering Extended Passive Mode (|||13889|)
+150 Here comes the directory listing.
+-rw-r--r--    1 0        0              32 Jun 04  2021 flag.txt
+226 Directory send OK.
+ftp> get flag.txt
+local: flag.txt remote: flag.txt
+229 Entering Extended Passive Mode (|||40217|)
+150 Opening BINARY mode data connection for flag.txt (32 bytes).
+100% |********************|    32      744.04 KiB/s    00:00 ETA
+226 Transfer complete.
+32 bytes received in 00:00 (0.15 KiB/s)
+ftp> exit
+221 Goodbye.
+                                                                 
+┌──(kali㉿kali)-[~/…/hack_the_box/starting_point/tier0/Fawn]
+└─$ ls
+flag.txt  service_scan_port
+                                                                 
+┌──(kali㉿kali)-[~/…/hack_the_box/starting_point/tier0/Fawn]
+└─$ cat flag.txt         
+***********************

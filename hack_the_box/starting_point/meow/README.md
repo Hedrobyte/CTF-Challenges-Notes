@@ -1,13 +1,13 @@
 ## General Information
 - Machine: Meow 
-- Nivel: Very easy
+- Difficulty: Very easy
 - OS: Linux
 - Date: 01/02/2023
 
 
 ## Methodology
 - Reconnaissance: Identification of the target IP and performing a port scan to discover running services.
-- Exploitation: Using the Telnet protocol to gain access to the target machine and exploit possible security vulnerabilities.
+- Exploitation: Utilization the Telnet protocol to gain access to the target machine and exploit possible security vulnerabilities.
 - Results Analysis: Documentation of findings, identification of vulnerabilities, and recommendations for remediation.
 
 
