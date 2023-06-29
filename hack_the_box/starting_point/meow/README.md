@@ -36,7 +36,7 @@ telnet 10.129.185.14
 ~~~
 
 
-## Recomendações
+## Recommendations
 - Disable the Telnet service or replace it with a more secure protocol, such as SSH.
 - Implement proper access controls to ensure that only authorized users can authenticate to the system.
 
