@@ -1,0 +1,21 @@
+# Nmap 7.93 scan initiated Wed Mar  1 20:36:16 2023 as: nmap -sVC -T4 -oN ./service_scan_port 10.129.198.14
+Nmap scan report for 10.129.198.14 (10.129.198.14)
+Host is up (0.14s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT    STATE SERVICE       VERSION
+135/tcp open  msrpc         Microsoft Windows RPC
+139/tcp open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp open  microsoft-ds?
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2023-03-02T05:36:54
+|_  start_date: N/A
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled but not required
+|_clock-skew: 4h00m00s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Mar  1 20:37:00 2023 -- 1 IP address (1 host up) scanned in 44.57 seconds
