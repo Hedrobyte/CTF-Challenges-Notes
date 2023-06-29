@@ -4,3 +4,7 @@ This folder contains my notes and resolutions for the Hack The Box challenges. I
 * Access [My Hack The Box Profile](https://app.hackthebox.com/profile/1318646) to view my progress and achievements.
 
 
+## Starting Point
+| Machine                                  | Tier |
+|------------------------------------------|------|  
+| [Meow](./starting_point/meow/)           | 0    |
