@@ -13,4 +13,4 @@ This folder contains my notes and resolutions for the Hack The Box challenges. I
 | [Redeemer](./starting_point/redeemer/)       | Linux   | Very easy  | 
 | [Appointment](./starting_point/appointment/) | Linux   | Very easy  | 
 | [Sequel](./starting_point/sequel/)           | Linux   | Very easy  | 
-| [Sequel](./starting_point/crocodile/)        | Linux   | Very easy  | 
+| [Crocodile](./starting_point/crocodile/)     | Linux   | Very easy  | 
