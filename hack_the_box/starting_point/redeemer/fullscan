@@ -1,0 +1,9 @@
+# Nmap 7.93 scan initiated Sat Feb 25 22:25:58 2023 as: nmap -sVC -T4 --open -p- -oN ./fullscan 10.129.5.121
+Nmap scan report for 10.129.5.121 (10.129.5.121)
+Host is up (0.14s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+6379/tcp open  redis   Redis key-value store 5.0.7
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Feb 25 22:26:48 2023 -- 1 IP address (1 host up) scanned in 49.55 seconds
