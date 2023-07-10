@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Tue Mar 14 20:17:16 2023 as: nmap -sVC -p- -T4 -Pn --open -O -oA ./service_scan_port 10.129.29.185
+Host: 10.129.29.185 (10.129.29.185)	Status: Up
+Host: 10.129.29.185 (10.129.29.185)	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/	Seq Index: 259	IP ID Seq: All zeros
+# Nmap done at Tue Mar 14 20:18:22 2023 -- 1 IP address (1 host up) scanned in 66.03 seconds
