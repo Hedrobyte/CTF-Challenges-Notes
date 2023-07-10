@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Fri Mar  3 10:45:50 2023 as: nmap -sVC -T4 -p- -vv -Pn -oA ./fullscan 10.129.129.156 -->
+<nmaprun scanner="nmap" args="nmap -sVC -T4 -p- -vv -Pn -oA ./fullscan 10.129.129.156" start="1677858350" startstr="Fri Mar  3 10:45:50 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1677858350"/>
+<taskend task="NSE" time="1677858350"/>
+<taskbegin task="NSE" time="1677858350"/>
+<taskend task="NSE" time="1677858350"/>
+<taskbegin task="NSE" time="1677858350"/>
+<taskend task="NSE" time="1677858350"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1677858350"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1677858350"/>
+<taskbegin task="SYN Stealth Scan" time="1677858350"/>
+<taskprogress task="SYN Stealth Scan" time="1677858381" percent="4.22" remaining="704" etc="1677859084"/>
+<taskprogress task="SYN Stealth Scan" time="1677858411" percent="11.01" remaining="493" etc="1677858904"/>
+<taskprogress task="SYN Stealth Scan" time="1677858441" percent="19.70" remaining="371" etc="1677858812"/>
+<taskprogress task="SYN Stealth Scan" time="1677858471" percent="29.05" remaining="296" etc="1677858766"/>
+<taskprogress task="SYN Stealth Scan" time="1677858501" percent="39.94" remaining="228" etc="1677858728"/>
+<taskprogress task="SYN Stealth Scan" time="1677858531" percent="51.75" remaining="169" etc="1677858700"/>
+<taskprogress task="SYN Stealth Scan" time="1677858561" percent="63.22" remaining="123" etc="1677858684"/>
+<taskprogress task="SYN Stealth Scan" time="1677858591" percent="75.34" remaining="79" etc="1677858670"/>
+<taskprogress task="SYN Stealth Scan" time="1677858621" percent="86.91" remaining="41" etc="1677858662"/>
+<taskend task="SYN Stealth Scan" time="1677858660" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1677858660"/>
+<taskend task="Service scan" time="1677858667" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1677858667"/>
+<taskend task="NSE" time="1677858673"/>
+<taskbegin task="NSE" time="1677858673"/>
+<taskend task="NSE" time="1677858674"/>
+<taskbegin task="NSE" time="1677858674"/>
+<taskend task="NSE" time="1677858674"/>
+<host starttime="1677858351" endtime="1677858674"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.129.156" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.129.129.156" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-response" count="65533" proto="tcp" ports="1-79,81-5984,5986-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Apache httpd" version="2.4.52" extrainfo="(Win64) OpenSSL/1.1.1m PHP/8.1.1" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.52</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=UTF-8)."></script><script id="http-server-header" output="Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/8.1.1"><elem>Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/8.1.1</elem>
+</script></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script></port>
+</ports>
+<times srtt="261107" rttvar="65176" to="521811"/>
+</host>
+<taskbegin task="NSE" time="1677858674"/>
+<taskend task="NSE" time="1677858674"/>
+<taskbegin task="NSE" time="1677858674"/>
+<taskend task="NSE" time="1677858674"/>
+<taskbegin task="NSE" time="1677858674"/>
+<taskend task="NSE" time="1677858674"/>
+<runstats><finished time="1677858674" timestr="Fri Mar  3 10:51:14 2023" summary="Nmap done at Fri Mar  3 10:51:14 2023; 1 IP address (1 host up) scanned in 324.38 seconds" elapsed="324.38" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
