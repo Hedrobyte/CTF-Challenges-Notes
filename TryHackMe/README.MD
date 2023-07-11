@@ -3,3 +3,8 @@ This folder contains my notes and resolutions for the TryHackMe challenges. It i
 
 * Access [my TryHackMe profile](https://tryhackme.com/p/hendrix.mode) to view my progress and achievements.
 
+
+## Challenges (CTF)
+| Rooms                                   | Difficulty |
+|-----------------------------------------|------------|
+|[Pickle Rick](./challenges/pickle_rick/) | Easy       |
