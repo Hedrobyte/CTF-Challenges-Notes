@@ -17,3 +17,4 @@ This folder contains my notes and resolutions for the Hack The Box challenges. I
 | [Responder](./starting_point/responder/)     | Windows | Very easy  | 
 | [Three](./starting_point/three/)             | Linux   | Very easy  | 
 | [Archetype](./starting_point/archetype/)     | Windows | Very easy  | 
+| [Oopsie](./starting_point/oopsie/)           | Linux   | Very easy  | 
