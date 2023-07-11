@@ -16,3 +16,4 @@ This folder contains my notes and resolutions for the Hack The Box challenges. I
 | [Crocodile](./starting_point/crocodile/)     | Linux   | Very easy  | 
 | [Responder](./starting_point/responder/)     | Windows | Very easy  | 
 | [Three](./starting_point/three/)             | Linux   | Very easy  | 
+| [Archetype](./starting_point/archetype/)     | Windows | Very easy  | 
