@@ -80,8 +80,8 @@ PS C:\Users\sql_svc\Downloads> ./winpeas.exe
     - Improper firewall configuration, allowing unauthorized access to the SQL Server service.
 
 ## Recommendations:
-    - Update Windows Server 2019 Standard to the latest version.
-    - Adjust sharing permissions and disable SMBv1.
-    - Update Microsoft SQL Server 2017 to the latest version.
-    - Strengthen authentication settings and restrict privileges for the "sql_svc" user.
-    - Configure the firewall properly to restrict access to the SQL Server service.
+- Update Windows Server 2019 Standard to the latest version.
+- Adjust sharing permissions and disable SMBv1.
+- Update Microsoft SQL Server 2017 to the latest version.
+- Strengthen authentication settings and restrict privileges for the "sql_svc" user.
+- Configure the firewall properly to restrict access to the SQL Server service.
