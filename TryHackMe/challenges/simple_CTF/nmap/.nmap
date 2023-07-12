@@ -1,0 +1,2 @@
+# Nmap 7.93 scan initiated Thu Mar 16 12:39:12 2023 as: nmap -sVC -T4 --open -oA ./nmap/ service_scan 10.10.6.153
+Failed to resolve "service_scan".

