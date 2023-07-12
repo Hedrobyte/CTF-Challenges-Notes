@@ -8,3 +8,4 @@ This folder contains my notes and resolutions for the TryHackMe challenges. It i
 | Rooms                                   | Difficulty |
 |-----------------------------------------|------------|
 |[Pickle Rick](./challenges/pickle_rick/) | Easy       |
+|[RootMe](./challenges/rootMe/)           | Easy       |

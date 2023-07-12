@@ -1,0 +1,24 @@
+# Nmap 7.93 scan initiated Tue Mar 14 12:50:07 2023 as: nmap -sVC -v -T4 -oA ./service_scan 10.10.215.13
+Nmap scan report for 10.10.215.13 (10.10.215.13)
+Host is up (0.27s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 4ab9160884c25448ba5cfd3f225f2214 (RSA)
+|   256 a9a686e8ec96c3f003cd16d54973d082 (ECDSA)
+|_  256 22f6b5a654d9787c26035a95f3f9dfcd (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: HackIT - Home
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar 14 12:50:50 2023 -- 1 IP address (1 host up) scanned in 42.49 seconds
