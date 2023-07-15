@@ -1,0 +1,16 @@
+└─$ sudo ssh emily@10.10.11.219
+[sudo] password for kali: 
+emily@10.10.11.219's password: 
+Linux pilgrimage 5.10.0-23-amd64 #1 SMP Debian 5.10.179-1 (2023-05-12) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri Jul 14 17:58:05 2023 from 10.10.14.106
+emily@pilgrimage:~$ ls
+binwalk_exploit.png  linpeas.sh  user.txt
+emily@pilgrimage:~$ cat user.txt
+******************************

@@ -4,6 +4,12 @@ This folder contains my notes and resolutions for the Hack The Box challenges. I
 * Access [My Hack The Box Profile](https://app.hackthebox.com/profile/1318646) to view my progress and achievements.
 
 
+## Machines
+| Machine                                      | OS      | Difficulty |
+|----------------------------------------------|---------|------------|
+| [Pilgrimage](./machines/pilgrimage/)         | Linux   |  Easy      | 
+
+
 ## Starting Point
 | Machine                                      | OS      | Difficulty |
 |----------------------------------------------|---------|------------|
