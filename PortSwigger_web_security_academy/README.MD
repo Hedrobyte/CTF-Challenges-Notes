@@ -7,3 +7,4 @@ This folder contains my notes and resolutions for the PortSwigger Academy challe
 |---------------------------------------------------------------------------------|--------------|
 |[Exposing Unreleased Products](./SQL_injection/01_exposing_unreleased_products/) | Apprentice   |
 |[Login Bypass](./SQL_injection/02_login_bypass/)                                 | Apprentice   |
+|[Retrieving Database Version](./SQL_injection/03_retrieving_database_version/)   | Practitioner |
