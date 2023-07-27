@@ -9,9 +9,9 @@ The purpose of this repository is to document my CTF resolutions, serving as a p
 
 ## Platform CTF Resolutions
 
-* [TryHackMe](./TryHackMe/)  
-* [Hack the Box](./hack_the_box/) 
-
+- [TryHackMe](./TryHackMe/)  
+- [Hack the Box](./hack_the_box/) 
+- [PortSwigger - Web Security Academy](./PortSwigger_web_security_academy/) 
 
 ## License
 
