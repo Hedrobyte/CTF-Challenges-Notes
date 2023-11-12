@@ -5,10 +5,11 @@ This folder contains my notes and resolutions for the TryHackMe challenges. It i
 
 
 ## Challenges (CTF)
-| Rooms                                   | Difficulty |
-|-----------------------------------------|------------|
-|[Pickle Rick](./challenges/pickle_rick/) | Easy       |
-|[RootMe](./challenges/rootMe/)           | Easy       |
-|[Simple CTF](./challenges/simple_CTF/)   | Easy       |
-|[OhSINT](./challenges/ohsint/)           | Easy       |
-|[Kenobi](./challenges/kenobi)            | Easy       |
+| Rooms                                      | Difficulty |
+|--------------------------------------------|------------|
+|[Pickle Rick](./challenges/pickle_rick/)    | Easy       |
+|[RootMe](./challenges/rootMe/)              | Easy       |
+|[Simple CTF](./challenges/simple_CTF/)      | Easy       |
+|[OhSINT](./challenges/ohsint/)              | Easy       |
+|[Kenobi](./challenges/kenobi)               | Easy       |
+|[Bounty Hacker](./challenges/bounty_hacker) | Easy       |

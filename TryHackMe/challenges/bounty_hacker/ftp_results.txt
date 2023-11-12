@@ -1,0 +1,29 @@
+└─$ ftp 10.10.217.109                        
+Connected to 10.10.217.109.
+220 (vsFTPd 3.0.3)
+Name (10.10.217.109:kali): anonymous
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+229 Entering Extended Passive Mode (|||12615|)
+ftp: Can't connect to `10.10.217.109:12615': Connection timed out
+200 EPRT command successful. Consider using EPSV.
+150 Here comes the directory listing.
+-rw-rw-r--    1 ftp      ftp           418 Jun 07  2020 locks.txt
+-rw-rw-r--    1 ftp      ftp            68 Jun 07  2020 task.txt
+226 Directory send OK.
+ftp> get locks.txt
+local: locks.txt remote: locks.txt
+200 EPRT command successful. Consider using EPSV.
+150 Opening BINARY mode data connection for locks.txt (418 bytes).
+100% |****************************************************************************|   418      654.17 KiB/s    00:00 ETA
+226 Transfer complete.
+418 bytes received in 00:00 (1.33 KiB/s)
+ftp> get task.txt
+local: task.txt remote: task.txt
+200 EPRT command successful. Consider using EPSV.
+150 Opening BINARY mode data connection for task.txt (68 bytes).
+100% |****************************************************************************|    68       63.18 KiB/s    00:00 ETA
+226 Transfer complete.
+68 bytes received in 00:00 (0.21 KiB/s)
