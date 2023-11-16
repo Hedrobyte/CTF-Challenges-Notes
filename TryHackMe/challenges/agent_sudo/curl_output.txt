@@ -1,0 +1,27 @@
+$ curl "http://10.10.188.244/" -H "User-Agent: R" -L
+What are you doing! Are you one of the 25 employees? If not, I going to report this incident
+<!DocType html>
+<html>
+<head>
+        <title>Annoucement</title>
+</head>
+
+<body>
+<p>
+        Dear agents,
+        <br><br>
+        Use your own <b>codename</b> as user-agent to access the site.
+        <br><br>
+        From,<br>
+        Agent R
+</p>
+</body>
+</html>
+
+└─$ curl "http://10.10.188.244/" -H "User-Agent: C" -L
+Attention chris, <br><br>
+
+Do you still remember our deal? Please tell agent J about the stuff ASAP. Also, change your god damn password, is weak! <br><br>
+
+From,<br>
+Agent R 

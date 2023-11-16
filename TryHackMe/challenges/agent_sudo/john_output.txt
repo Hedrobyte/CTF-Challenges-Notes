@@ -1,0 +1,15 @@
+└─$ zip2john 8702.zip > hash.txt 
+
+└─$ john hash.txt 
+Using default input encoding: UTF-8
+Loaded 1 password hash (ZIP, WinZip [PBKDF2-SHA1 256/256 AVX2 8x])
+Cost 1 (HMAC size) is 78 for all loaded hashes
+Will run 2 OpenMP threads
+Proceeding with single, rules:Single
+Press 'q' or Ctrl-C to abort, almost any other key for status
+Almost done: Processing the remaining buffered candidate passwords, if any.
+Proceeding with wordlist:/usr/share/john/password.lst
+alien            (8702.zip/To_agentR.txt)     
+1g 0:00:00:06 DONE 2/3 (2023-11-16 13:57) 0.1631g/s 7250p/s 7250c/s 7250C/s 123456..Peter
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 

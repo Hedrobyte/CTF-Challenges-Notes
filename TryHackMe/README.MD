@@ -13,3 +13,4 @@ This folder contains my notes and resolutions for the TryHackMe challenges. It i
 |[OhSINT](./challenges/ohsint/)              | Easy       |
 |[Kenobi](./challenges/kenobi)               | Easy       |
 |[Bounty Hacker](./challenges/bounty_hacker) | Easy       |
+|[Agent Sudo](./challenges/agent_sudo)       | Easy       |
